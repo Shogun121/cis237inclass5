@@ -79,6 +79,14 @@ namespace cis237inclass5
             {
                 Console.WriteLine(car.id + " " + car.make + " " + car.model);
             }
+
+            //How to use Contains to wild card search on a field 
+            //MIGHT BE USEFUL IN NEXT ASSIGNMENT
+            List<Car> foundCars = carsRCooleyEnties.Cars.Where(
+                car => car.make.ToLower().Contains("Cha".ToLower())
+                ).ToList();
+
+
             //*************************
             //Add a new car to the database
             //*************************
